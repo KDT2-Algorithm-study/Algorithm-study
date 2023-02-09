@@ -7,7 +7,7 @@
 ## 문제
 다음 소스는 N번째 피보나치 수를 구하는 C++ 함수이다.
 
-```
+```c
 int fibonacci(int n) {
     if (n == 0) {
         printf("0");
