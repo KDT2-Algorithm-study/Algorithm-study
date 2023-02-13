@@ -18,11 +18,10 @@ sys.stdin = open("member_list.txt", encoding="UTF-8")
 # 6회차_김용진
 # 4회차_장민지
 # 5회차_이혜지
+
 # 빠진 인원들 추가
 del_lst = [
-    "4회차_박지환",
-    "4회차_장민지",
-    "5회차_이혜지",
+    "",
 ]
 
 people_num = int(input())
