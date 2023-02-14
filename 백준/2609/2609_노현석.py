@@ -7,4 +7,4 @@ def gcd(x, y): # 유클리드 호제법을 이용한 최대공약수 구하는 �
 a,b = map(int, input().split())
 res1 = gcd(a, b) 
 res2 = round((a * b) // res1) # a * b == 최대공약수 * 최소공배수
-print(res1, res2, sep='\n') 
+print(res1, res2, sep='\n')
