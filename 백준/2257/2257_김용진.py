@@ -29,8 +29,6 @@ for i in word:
         stack[-1] *= int(i) # 만약 숫자가 들어온다면 스택의 가장 마지막 수와 숫자와 곱해준다
 print(sum(stack)) # 스택에 저장된 숫자를 다 더해준다
 
-
-
 # from collections import deque
 # import sys
 # sys.stdin = open('input.txt','r')
