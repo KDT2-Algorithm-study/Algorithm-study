@@ -1,12 +1,10 @@
 from collections import deque
-import copy
 def solution(priorities, location):
     check = []
     le = len(priorities)
     for i in range(le):
         check.append(i)
-    deq = copy.deepcopy(priorities)
-    deq = deque(deq)
+    deq = deque(priorities)
     check = deque(check)
     while True:
         a = deq.popleft()
