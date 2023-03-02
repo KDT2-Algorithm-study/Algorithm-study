@@ -13,3 +13,4 @@ for i in command:
             print(0)
     else:
         heapq.heappush(heap, i)
+ 
