@@ -22,4 +22,19 @@ while 1:
         elif num == 1:
             print(1)
             break
+
+# 재귀함수 사용
+
+# def fibo(m):
+#     if m == 0:
+#         return 0
+#     elif m == 1:
+#         return 1
+#     else:
+#         return fibo(m-1) + fibo (m-2)
+
+# n = int(input())
+
+# ans = fibo(n)
+# print(ans)
     
