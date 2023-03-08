@@ -8,7 +8,6 @@ for T in range(1, test_case+1):
     p, q, r, s, w = map(int, input().split())
     
     a_charge = p * w
-    # r should be less than w
     b_charge = q if w <= r else (q + s*(w-r))
     
     answer = min(a_charge, b_charge)
