@@ -14,3 +14,12 @@ m = 1
 for i in range(1,int(input())+1):
     m *= i
 print(m)
+
+# 함수
+# 코드길이 130B/ 시간 40ms/ 메모리 31256 KB
+def factorial(n):
+    if n in [1,0]:
+        return 1
+    else:
+        return n * factorial(n - 1)
+print(factorial(int(input())))
