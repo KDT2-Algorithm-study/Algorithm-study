@@ -8,7 +8,7 @@ def hanoi(N, a, b, c):
         hanoi(N - 1, c, b, a)
 
 N = int(sys.stdin.readline())
-print((2 ** N) - 1) 
+print((2 ** N) - 1)
 hanoi(N, 1, 3, 2)
 
 #-----------------
