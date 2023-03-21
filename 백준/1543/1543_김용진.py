@@ -17,6 +17,5 @@ while len(word) >= i:
    else:
         i += 1
         num += 1
-
 print(cnt)
 
