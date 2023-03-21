@@ -1,0 +1,1 @@
+print(input().replace(input(), '1').count('1'))
