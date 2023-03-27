@@ -13,7 +13,6 @@ def solution(quiz):
             else:
                 answer.append('X')   
 
-    
     return answer
 
 q = ["3 - 4 = -3", "5 + 6 = 11"]
