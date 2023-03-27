@@ -1,0 +1,12 @@
+T = int(input())
+for _ in range(T):
+    words = input()
+    width = len(words)
+    ans = '#'
+    print("".join('.' + '.#..' * width))
+    print("".join('.' + '#.#.' * width))
+    for i in words:
+        ans += '.' + i + '.#'
+    print(ans)
+    print("".join('.' + '#.#.' * width))
+    print("".join('.' + '.#..' * width))
