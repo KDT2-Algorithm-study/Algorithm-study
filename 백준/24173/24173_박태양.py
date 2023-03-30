@@ -3,15 +3,15 @@ change = 0
 def heapify(A, k, n) :
     global cnt
     global change
-    left = 2*k 
-    right =2*k + 1
-    smaller = 0
-    if right <= n :
+    left = 2*k                          # k 왼쪽 자식 노드
+    right =2*k + 1                      # k 오른쪽 자식 노드
+    smaller = 0                         # 왼쪽과 오른쪽 중에 작은놈 체크
+    if right <= n :                     # 자식노드가 둘다 있을 때
         if A[left] < A[right] :
             smaller = left
         else: 
-            smaller = right
-    elif left <= n : 
+            smaller = right                
+    elif left <= n :                    # 왼쪽 자식노드만 있을 때
         smaller = left
     else :
         return
