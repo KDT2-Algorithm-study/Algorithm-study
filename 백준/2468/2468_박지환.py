@@ -20,28 +20,28 @@ for water in range(m): # 물 높이 낮을 때부터
             if map_list[a][b] > water:
                 visited[a][b] = 1
 
-for i in range(n):
-    for j in range(n):
-        if visited[i][j] == 0:
-            visited[i][j] = 1
-            stack = []
-            stack.append(j)
-            stack.append(i)
-            cnt += 1
-            
-            while stack:
-                y = stack.pop()
-                x = stack.pop()
+    for i in range(n):
+        for j in range(n):
+            if visited[i][j] == 1:
+                visited[i][j] = 0
+                stack = []
+                stack.append(j)
+                stack.append(i)
+                cnt += 1
                 
-                for k in range(4):
-                    ny = y + dy[k]
-                    nx = x + dx[k]
-                if  0 <= nx < n and 0 <= ny < n:
-                    if visited[ny][nx] == 1:
-                        visited[ny][nx] = 0
-                        stack.append(nx)
-                        stack.append(ny)
-            
+                while stack:
+                    y = stack.pop()
+                    x = stack.pop()
+                    
+                    for k in range(4):
+                        ny = y + dy[k]
+                        nx = x + dx[k]
+                    if  0 <= nx < n and 0 <= ny < n:
+                        if visited[ny][nx] == 1:
+                            visited[ny][nx] = 0
+                            stack.append(nx)
+                            stack.append(ny)
+                
     res.append(cnt)
     
 print(max(res))
