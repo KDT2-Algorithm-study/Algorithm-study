@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 
 num = int(input())
 lst = []
@@ -5,9 +7,10 @@ for i in range(num):
     lst.append(list(map(int,input().split())))
 
 maxval = max(map(max,lst))
+minval = min(map(min,lst))
 move = [(1,0),(-1,0),(0,1),(0,-1)]
 result = 0
-for i in range(0,maxval+1):
+for i in range(minval-1, maxval):
     check = [[False for _ in range(num)] for _ in range(num)]
     stack = []
     cnt = 0
