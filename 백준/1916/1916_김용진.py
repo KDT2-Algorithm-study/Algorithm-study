@@ -1,5 +1,5 @@
 # 최단경로
-
+# 저번 다익스트라 작성을 참고해서 풀었습니다.
 import sys,heapq
 sys.stdin = open('input.txt','r')
 INF = int(1e9) # 무한을 의미하는 값으로 10억을 설정
