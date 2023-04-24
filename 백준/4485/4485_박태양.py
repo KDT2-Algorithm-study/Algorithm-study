@@ -36,16 +36,3 @@ while True:
 
     print(f'Problem {cnt}: {min_cost[-1][-1]}')
     cnt +=1
-
-   
-    
-    
-
-
-
-
-
-
-
-
-    
