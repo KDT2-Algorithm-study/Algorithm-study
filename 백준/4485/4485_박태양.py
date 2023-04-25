@@ -4,10 +4,9 @@ input = sys.stdin.readline
 
 d = [(1,0),(-1,0),(0,1),(0,-1)]
 INF = 125*125*9
-cnt = 1
+
 def dijkstra(graph,result_graph,num):
     q = []
-
     heapq.heappush(q,(graph[0][0],0,0))
     result_graph[0][0] = graph[0][0]
     while q:
@@ -20,7 +19,7 @@ def dijkstra(graph,result_graph,num):
                     result_graph[y+dy][x+dx] = new_c
                     heapq.heappush(q, (new_c, x+dx, y+dy))
 
-
+cnt = 1
 while True:
     num = int(input())
     if num == 0:
