@@ -31,7 +31,7 @@ def bfs(lst: list, start: tuple):
     color = lst[start[0]][start[1]]
     lst[start[0]][start[1]] = 0
     
-    while deq:g
+    while deq:
         pos = deq.popleft()
         for dy, dx in DELTA:
             new_pos = (pos[0]+dy, pos[1]+dx)
