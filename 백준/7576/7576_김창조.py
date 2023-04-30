@@ -1,9 +1,7 @@
 # 7576. 토마토
 
 import sys
-import copy
 from collections import deque
-from pprint import pprint
 input = sys.stdin.readline
 
 M, N = map(int, input().split())
