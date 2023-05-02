@@ -30,7 +30,7 @@ for i in range(n):
 		if not box[i][j]:
 			print(-1)
 			exit()
-		it result < box[i][j]:
+		if result < box[i][j]:
 			result = box[i][j]
 
 print(result - 1)
